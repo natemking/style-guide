@@ -33,6 +33,9 @@ The following Prettier packages & plugins need installed as dev dependencies:
 -   prettier-plugin-packagejson
 -   prettier-plugin-tailwindcss
 
+## Package.json
+Make sure to add `"type": "module"` to your package.json. You may need to make sure all of your config & other files are in ESM syntax but since Next v14 this is now supported.
+
 ## Typescript config
 
 Make sure to include your config files in the `tsconfig.json`:
