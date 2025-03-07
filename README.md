@@ -49,11 +49,18 @@ Make sure to include your config files in the `tsconfig.json`:
     ]
 ```
 
-
-### TODO
-At the time of making this, the `eslint-plugin-tailwindcss` package is still waiting to be upgraded to be compatible w/ v4 and will be added to this config once that happens. 
-
+<hr />
 
 ```
-pnpm install --save-dev @eslint/eslintrc @eslint/js @next/eslint-plugin-next eslint eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-tsdoc eslint-plugin-unicorn typescript-eslint prettier prettier-plugin-packagejson prettier-plugin-tailwindcss
+pnpm i @eslint/eslintrc @eslint/js @next/eslint-plugin-next eslint eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-tsdoc eslint-plugin-unicorn typescript-eslint prettier prettier-plugin-packagejson prettier-plugin-tailwindcss -D
 ```
+
+## Future Additions
+
+### eslint-plugin-tailwindcss
+At the time of making this, the [eslint-plugin-tailwindcss](https://www.npmjs.com/package/eslint-plugin-tailwindcss) package is still waiting to be upgraded to be compatible w/ v4 and will be added to this config once that happens. 
+
+### eslint/css
+Eslint now supports linting [CSS](https://eslint.org/blog/2025/02/eslint-css-support/) with the [@eslint/css](https://www.npmjs.com/package/@eslint/css) plugin but there are still bugs in installing it w/ pnpm and yarn as of the time of writing this. There are also a bunch of rules in the feature request pipeline. The plugin supports TW syntax as well but there is the following issue: 'The Tailwind syntax doesn’t currently provide for the theme() function. This is a limitation of CSSTree that we hope will be resolved soon.' 
+
+Once these initial quirks are worked out, this plugin will be fully incorporated into this style guide. 
