@@ -420,9 +420,33 @@ export default defineConfig([
             /** Require TSDoc comments conform to the TSDoc specification. */
             'tsdoc/syntax': 'error',
 
-            /** UNICORN */
-            /** Require using the `node:` protocol when importing Node.js built-in modules. */
+             /** UNICORN */
+            /** Require an error message when throwing an error. */
+            'unicorn/error-message': 'error',
+            /** Prefer for…of over the forEach method  */
+            'unicorn/no-array-for-each': 'error',
+            /** Disallow unnecessary spread */
+            'unicorn/no-useless-spread': 'error',
+            /** Enforce proper case for numeric literals */
+            'unicorn/number-literal-case': 'error',
+            /** Prefer .find(…) and .findLast(…) over the first or last element from .filter(…) */
+            'unicorn/prefer-array-find': 'error',
+            /** Enforces the use of event.key over event.keyCode which is deprecated */
+            'unicorn/prefer-keyboard-event-key': 'error',
+            /**
+             * Require using the `node:` protocol when importing Node.js built-in modules.
+             * NOTE Next does not support using Node.js built-in modules in edge runtime.
+             * https://nextjs.org/docs/messages/node-module-in-edge-runtime
+             */
             'unicorn/prefer-node-protocol': 'warn',
+            /** Enforces the use of the spread operator (...) over outdated patterns.  */
+            'unicorn/prefer-spread': 'error',
+            /** Prefer ternary expressions over simple if-else statements */
+            'unicorn/prefer-ternary': 'error',
+            /** Enforce using the separator argument with Array#join() */
+            'unicorn/require-array-join-separator': 'error',
+            /** Require new when creating an error */
+            'unicorn/throw-new-error': 'error',
 
             /** VARIABLES */
             /** Disallow labels that share a name with a variable. */
